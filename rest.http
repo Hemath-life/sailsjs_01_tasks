@@ -1,0 +1,20 @@
+GET http://localhost:1337/posts  HTTP/1.1
+
+###
+GET http://localhost:1337/1 HTTP/1.1
+
+###
+# create the post object
+POST  http://localhost:1337/post HTTP/1.1
+content-type: application/json
+
+{
+    "title": "sample",
+    "body": "go to shop"
+}
+
+###
+DELETE  http://localhost:1337/1  HTTP/1.1
+
+
+
