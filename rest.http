@@ -9,8 +9,8 @@ POST  http://localhost:1337/post HTTP/1.1
 content-type: application/json
 
 {
-    "title": "sample",
-    "body": "go to shop"
+    "title": "how",
+    "body": "good mroing"
 }
 
 ###
@@ -18,3 +18,5 @@ DELETE  http://localhost:1337/1  HTTP/1.1
 
 
 
+###
+GET   http://localhost:1337/home HTTP/1.1

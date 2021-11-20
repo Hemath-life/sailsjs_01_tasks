@@ -20,9 +20,10 @@ module.exports = {
           create: async function (req, res) {
                     const body = req.allParams()
                     sails.log.debug(body)
-                    Post.create(body).exec(() => {
+                    Post.create(body).exec((err, result) => {
                               console.log("object created")
-                              res.send(body);
+                              if (err) return res.badRequest(err.toString())
+                              res.redirect('./home')
 
                     })
           },
@@ -41,7 +42,7 @@ module.exports = {
 
           },
 
-          destroy:async  function (req, res) {
+          destroy: async function (req, res) {
                     const postId = req.param('postId')
                     sails.log.debug(postId)
                     Post.destroy({ id: postId }).exec((err, result) => {
