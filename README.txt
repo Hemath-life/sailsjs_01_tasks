@@ -60,6 +60,8 @@ cli ?
                     - this will create todo controller and todo model in model folder
          - sails generate model model_name attribute1 attribute2  attribute3 ctc  
         - sails generate controller controller_name
+        - sails generate action action_file_name
+
 
 blue print ?
     - once run sails generate api todo this comment we can able to do all the curd operation via postman all the thing will take care blueprint this Features maybe use full for route prototyping don't use for this in production just use it for locally otherWise create you own
@@ -85,3 +87,8 @@ use Case ( job portal application) ?
 
 actions and controllers ?
     - all actions defined in controller file
+
+
+naming conversions ?
+    - action file ____ cabap-case 
+    - controller ____ CamilCase

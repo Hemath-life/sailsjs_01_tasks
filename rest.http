@@ -9,7 +9,7 @@ POST  http://localhost:1337/post HTTP/1.1
 content-type: application/json
 
 {
-    "title": "how",
+     "title": "how",
     "body": "good mroing"
 }
 
